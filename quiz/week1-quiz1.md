@@ -1,4 +1,4 @@
-# Quiz 1 | I. Introduction
+# Week 1 | I. Introduction
 
 ## Question 1
 
@@ -14,7 +14,7 @@ A computer program is said to learn from experience E with respect to some task 
 
 * The weather prediction task.
 * The probability of it correctly predicting a future date's weather. 
-* The process of the algorithm examining a large amount of historical weather data.
+* **The process of the algorithm examining a large amount of historical weather data.**
 * None of these.
 
 ---
