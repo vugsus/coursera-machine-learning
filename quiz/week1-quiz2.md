@@ -94,7 +94,7 @@ Suppose that for some linear regression problem (say, predicting housing prices 
 
 * For this to be true, we must have θ0=0 and θ1=0 so that hθ(x)=0
 	*  If J(θ0,θ1)=0, that means the line defined by the equation "y=θ0+θ1x" perfectly fits all of our data. There's no particular reason to expect that the values of θ0 and θ1 that achieve this are both 0 (unless y(i)=0 for all of our training examples).
-* Our training set can be fit perfectly by a straight line, i.e., all of our training examples lie perfectly on some straight line.
+* **Our training set can be fit perfectly by a straight line, i.e., all of our training examples lie perfectly on some straight line.**
 	* If J(θ0,θ1)=0, that means the line defined by the equation "y=θ0+θ1x" perfectly fits all of our data.
 * For this to be true, we must have y(i)=0 for every value of i=1,2,…,m.
 	* So long as all of our training examples lie on a straight line, we will be able to find θ0 and θ1 so that J(θ0,θ1)=0. It is not necessary that y(i)=0 for all of our examples.
