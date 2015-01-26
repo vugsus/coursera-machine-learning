@@ -10,8 +10,8 @@ maxScores = max(examScores)
 
 minScores = min(examScores)
 
-xCol = 1
-xRow = 3
+xCol = 2
+xRow = 4
 
 columnRange = maxScores(xCol) - minScores(xCol)
 
