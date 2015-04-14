@@ -21,10 +21,27 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+% Doing some broadcasting (https://www.gnu.org/software/octave/doc/interpreter/Broadcasting.html)
+%warning ("off", "Octave:broadcast");
+
+% calculate all Euclidian distances betweek all X and all centroids (a^2 + b^2 = c^2)
+%distances = sqrt(((X(:,1) - centroids(:,1)').^2) + ((X(:,2) - centroids(:,2)').^2));
+
+% get the min value per row and corresponding index (which should be the centroid id)
+%[minValues,idx]=min(distances,[],2);
+
+% Restore broadcasting
+%warning ("on", "Octave:broadcast");
 
 
-
-
+for i = 1:length(idx)
+    distance = zeros(K, 1);
+    for j = 1:K
+        % TODO(SaveTheRbtz@): Can be vectorized as diff * diff'
+        distance(j) = sum(sum((X(i, :) - centroids(j, :)) .^ 2 ));
+    endfor
+    [value, idx(i)] = min(distance);
+endfor
 
 
 % =============================================================
