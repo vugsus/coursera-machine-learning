@@ -16,9 +16,10 @@ for i = 1:size(X1, 2)
    vals(:, i) = svmPredict(model, this_X);
 end
 
+
 % Plot the SVM boundary
 hold on
-contour(X1, X2, vals, [0 0], 'Color', 'b');
+contour(X1, X2, vals, [0 0], {'LineWidth', 1, 'LineColor', 'b'});
 hold off;
 
 end
