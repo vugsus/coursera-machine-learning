@@ -75,15 +75,9 @@ for i = 1:7
    end
 end
 
-A
-B
-C
-D
-
-
-B = X .^ 2
+#B = X .^ 2
  
-C = X + 1
+#C = X + 1
  
 D = X / 4
  
