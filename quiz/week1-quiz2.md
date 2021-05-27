@@ -68,7 +68,7 @@ Suppose we set θ_0=−1,θ_1=0.5. What is hθ(4)?
 	
 ---
 
-##Question 4
+## Question 4
 
 Let f be some function so that f(θ0,θ1) outputs a number. For this problem, f is some arbitrary/unknown smooth function (not necessarily the cost function of linear regression, so f may have local optima). Suppose we use gradient descent to try to minimize f(θ0,θ1) as a function of θ0 and θ1. Which of the following statements are true? (Check all that apply.)
 
